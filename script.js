@@ -106,7 +106,7 @@ function prepararEdicao(nome, cargo) {
 function deletarUsuario(nome) {
     // Exibe uma caixa de confirmação nativa do navegador para evitar exclusões acidentais
     if (confirm(`Tem certeza que deseja excluir ${nome}?`)) {
-        fetch(`http://localhost:3000/usuarios/${encodeURIComponent(nome)}`, {
+        fetch(`https://render.com/docs/web-services#port-binding${encodeURIComponent(nome)}`, {
             method: 'DELETE'
         })
             .then(function () {
